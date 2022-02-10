@@ -1,6 +1,6 @@
 #include <iostream>
-
-int main(){
-    std::cout<<"Hello World!";
+using namespace std;
+int main(int argc, char *argv[]){
+    cout << "Hello World!";
     return 0;
 }
