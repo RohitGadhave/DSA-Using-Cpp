@@ -4,6 +4,7 @@ int main(int argc, char *argv[]){
     int integerType;
     char charType;
     float floatType;
+    long longType;
     double doubleType;
     wchar_t wideChareacter;
     //modifiers
@@ -35,10 +36,12 @@ int main(int argc, char *argv[]){
     std::cout<<"\n11> wide chareacter : "<< sizeof(wideChareacter);
 
     std::cout<<"\n12> float Type : "<< sizeof(floatType);
+
+    std::cout<<"\n13> Long Type : "<< sizeof(longType);
     
 
-    std::cout<<"\n13> double Type : "<< sizeof(doubleType);
+    std::cout<<"\n14> double Type : "<< sizeof(doubleType);
 
-    std::cout<<"\n14> long double : " << sizeof(longDoubleType) << "\n";
+    std::cout<<"\n15> long double : " << sizeof(longDoubleType) << "\n";
     return 0;
 }
