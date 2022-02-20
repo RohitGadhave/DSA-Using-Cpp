@@ -11,7 +11,7 @@ int main (int argc,char *argv[]){
     long lLong;
  
     std::cout << "Chareacter : " << cChareacter ;
-    std::cout<<"\nWide Chareacter : "<< sizeof(wideChareacter);
+    std::cout<<"\nWide Chareacter : "<< wideChareacter;
     std::cout << "\nFloat : " <<fFloat ;
     std::cout << "\nInteget : " <<iInteget ;
     std::cout << "\nDouble : " <<dDouble ;
