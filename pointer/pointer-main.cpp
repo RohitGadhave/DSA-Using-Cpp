@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
 
-struct Rectangle{
-
+struct Rectangle
+{
+    int length;
+    int breath;
+    int area;
 };
-
-int main()
+void rectangleStructurePointer();
+void pinterVoid()
 {
     int iNo = 10;
     int *iPinter;
@@ -32,13 +35,26 @@ int main()
 
     for (int i = 0; i < iNo; i++)
     {
-        cout << i * intSize << " * " << *pointingToHeapInCPP << " - " << pointingToHeapInCPP <<" i " << pointingToHeapInCPP[i] << endl;
+        cout << i * intSize << " * " << *pointingToHeapInCPP << " - " << pointingToHeapInCPP << " i " << pointingToHeapInCPP[i] << endl;
     }
+}
+int main()
+{
 
-    // for (const p : arr)
-    // {
-    //     cout << p << endl;
-    // }
-
+    // pinterVoid();
+    rectangleStructurePointer();
     return 0;
+}
+
+void rectangleStructurePointer()
+{
+    cout << "Rectangle Structure Pointer" << endl;
+    Rectangle *pointer = new Rectangle;
+
+    pointer->breath = 2;
+    pointer->length = 5;
+    pointer->area =  pointer->breath *  pointer->length;
+    cout << pointer->breath << endl;
+    cout << pointer->length << endl;
+    cout << pointer->area << endl;
 }
