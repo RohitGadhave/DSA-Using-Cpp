@@ -1,40 +1,40 @@
 #include <iostream>
 using namespace std;
-
+template<class T>
 class Arithmetic
 {
 private: 
-int a=0;
- int b=0;
+T a=0;
+ T b=0;
 
  public:
  Arithmetic(){
 
  }
 
- Arithmetic(int a,int b){
+ Arithmetic(T a,T b){
     this->a = a;
     this->b = b;
  }
 
- int add(){
+ T add(){
     return a+b;
  }
- int min(){
+ T minus(){
     return a-b;
  }
- void setA(int a){
+ void setA(T a){
     this->a = a;
  }
- void setB(int b){
+ void setB(T b){
     this->b = b;
  }
 
- int getA(){
+ T getA(){
     return a;
  }
 
- int getB(){
+ T getB(){
    return b;
  };
 
@@ -46,9 +46,9 @@ cout<<"Destructor"<<endl;
 
 int main()
 {
-    Arithmetic a(1,2);
+    Arithmetic<int> a(1,2);
 
-    cout<<"a= "<<a.getA()<<endl;
+    cout<<"Hello World "<<a.getA()<< endl;
 
     return 0;
 }
